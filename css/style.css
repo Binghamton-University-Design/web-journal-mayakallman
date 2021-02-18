@@ -11,3 +11,12 @@ body{
 h1,h2{
 	font-weight: 200;
 }
+
+div{
+	width: 600px;
+	height: 600px;
+	background: red;
+	margin: 2em;
+	padding: 2em;
+
+}
