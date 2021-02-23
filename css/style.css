@@ -1,36 +1,52 @@
 /*stylesheet*/
 
-body{
-	margin:50px;
-	background: blue;
+/*stylesheet*/
+
+body {
+	margin: 0;	
+	background: black;
 	color: white;
-	font-family: 'Fira Sans', sans-serif;
-	font-weight:200;
-
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
 }
-#wrapper{
-	margin:2em auto;
+
+h1, h2, h3, h4, p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+h1, h2 {
+	font-weight: 700;
+}
+
+#wrapper {
+	margin: 2em auto;
 	max-width: 1200px;
-	padding:0 2em;
 }
 
-#main{
+#main {
+	background: green;
 	margin: 2em;
 	padding: 2em;
-	background: green
 }
 
-h1,h2{
-	font-weight: 200;
-	margin:50px;
+#sidebar {
+	background: pink;
 }
 
-div{
-
-
+#content {
+	background: red;
 }
 
-p{
-	margin:50px;
+@media (max-width: 699px) {
+
+	#wrapper {
+		margin: 0em auto;
+	}
+
+	#main {
+		margin: 1em;
+		padding: 0em;
+	}
 
 }
