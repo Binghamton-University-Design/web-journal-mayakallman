@@ -8,6 +8,17 @@ body{
 	font-weight:200;
 
 }
+#wrapper{
+	margin:2em auto;
+	max-width: 1200px;
+	padding:0 2em;
+}
+
+#main{
+	margin: 2em;
+	padding: 2em;
+	background: green
+}
 
 h1,h2{
 	font-weight: 200;
@@ -15,10 +26,11 @@ h1,h2{
 }
 
 div{
-	width:6em;
-	height:6em;
-	background:red;
-	margin:4em;
-	padding:4em;
+
+
+}
+
+p{
+	margin:50px;
 
 }
