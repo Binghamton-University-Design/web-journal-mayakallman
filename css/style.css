@@ -2,7 +2,8 @@
 
 body {
 	margin: 0;	
-	background: #e3faf5;"/*#eaeded/*/;
+	background-image: linear-gradient(#005254, #e3faf5);
+	/*background: ##eaeded*/;
 	color: #22333B;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -14,6 +15,7 @@ h1, h2, h3, h4, p {
 }
 
 h1, h2 {
+	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
@@ -25,7 +27,6 @@ h1, h2 {
 }
 
 #main {
-	/*background: #E8E8E4;*/
 	margin: 2em;
 	padding: 2em;
 }
