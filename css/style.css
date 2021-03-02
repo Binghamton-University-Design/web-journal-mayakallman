@@ -2,10 +2,10 @@
 
 body {
 	margin: 0;	
-	background: black;
-	color: white;
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 200;
+	background: white/*#e3faf58*/;
+	color: #22333B;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
 
 h1, h2, h3, h4, p {
@@ -14,8 +14,10 @@ h1, h2, h3, h4, p {
 }
 
 h1, h2 {
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
+
 
 #wrapper {
 	margin: 2em auto;
@@ -23,17 +25,20 @@ h1, h2 {
 }
 
 #main {
-	background: #333;
+	/*background: #E8E8E4;*/
 	margin: 2em;
 	padding: 2em;
 }
 
 #sidebar {
-	/*background: pink;*/
+	background: #e3faf5;
 }
 
 #logo {
+	margin: 3em;
 	padding: 3em 0;
+	width: 12em;
+	height: auto;
 }
 
 #logo h1 {
@@ -55,8 +60,8 @@ h1, h2 {
 
 #nav ul {
   list-style: none;
-  padding-left: 0;
-  margin: 0
+  align-items: center;
+  justify-content: center;
 }
 
 #nav li {
@@ -66,7 +71,6 @@ h1, h2 {
 
 .quote-holder {
 	height: 40vh;
-	background: brown;
 	display: flex;
 	align-items: center;
 	justify-content: center;
