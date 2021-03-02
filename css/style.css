@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;	
-	background: white/*#e3faf58*/;
+	background: #e3faf5;"/*#eaeded/*/;
 	color: #22333B;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 #sidebar {
-	background: #e3faf5;
+
 }
 
 #logo {
