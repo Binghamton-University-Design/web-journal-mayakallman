@@ -35,8 +35,10 @@ h1, h2 {
 }
 
 #logo {
+	shape-margin: square;
 	margin: 3em;
-	padding: 3em 0;
+	align-items: center;
+	justify-content: center;
 	width: 12em;
 	height: auto;
 }
