@@ -1,10 +1,8 @@
 /*stylesheet*/
-
 body {
 	margin: 0;	
-	background-image:url(../images/swirl.jpg);
-	/*background: ##eaeded*/;
-	font-color: #22333B;
+	background-image:url(../images/darkswirl.png);
+	font-color: #22333B/*background: ##eaeded*/;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 }
@@ -14,11 +12,21 @@ h1, h2, h3, h4, p {
 	margin-bottom: 1em;
 }
 
-h1, h2 {
+h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
+	font-size: 60pt;
+	align-items: center;
+	justify-content: center;
+
 }
 
+#wrapperhome {
+	margin: 15em auto;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+}
 
 #wrapper {
 	background-color: #EFFBF5;
@@ -31,7 +39,8 @@ h1, h2 {
 #main {
 	margin: 2em;
 	padding: 2em;
-}
+	align-items: center;
+	justify-content: center;}
 
 #sidebar {
 
@@ -40,8 +49,6 @@ h1, h2 {
 #logo {
 	shape-margin: square;
 	margin: 3em;
-	align-items: center;
-	justify-content: center;
 	width: 12em;
 	height: auto;
 }
@@ -63,13 +70,44 @@ h1, h2 {
 }
 
 #nav ul {
-  list-style: none;
-  align-items: center;
-  justify-content: center;
+ 	list-style: none;
+ 	padding-left: 0;
+ 	margin:0;
+
 }
 
+a {
+  display: block;
+  padding: 20px;
+  background-color: #C6CBC2;
+}
+
+li {
+  float: left;
+}
+
+ 
+
+a:link {
+  color: #22333B;
+}
+
+/* visited link */
+a:visited {
+  color: #035C6E;
+}
+
+/* mouse over link */
+a:hover {
+  color: #9BBEBE;
+}
+
+
+
 #nav li {
-	margin-bottom: 1em;
+	padding: .25em;
+	display: inline;
+	margin-bottom: 0;
 }
 
 
