@@ -54,6 +54,7 @@ h1{
 }
 
 #logo img, .item img {
+max-width: 25em;
 }
 
 .item img {
