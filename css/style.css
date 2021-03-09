@@ -44,17 +44,41 @@ h1{
 	justify-content: center;
 }
 
+.home {
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.home .grid {
+	grid-gap: 0;
+}
+
+.home > div::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0;
+  padding-bottom: calc(100% / (1/1));
+}
+
+.home .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+.home .content-inside {
+	padding: 0rem;
+}
+
 #sidebar {
 
-}
-
-#logo {
-	shape-margin: square;
-	margin: 3em;
-}
-
-#logo img, .item img {
-max-width: 25em;
 }
 
 .item img {
@@ -64,11 +88,18 @@ max-width: 25em;
 #content {
 }
 
+#masthead {
+
+}
+
 #nav ul {
  	list-style: none;
  	padding-left: 0;
  	margin:0;
+}
 
+#logo h1 {
+	margin: 0;
 }
 
 a {
