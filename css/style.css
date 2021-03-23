@@ -1,10 +1,11 @@
 /*stylesheet*/
+
 body {
 	margin: 0;	
-	background-image:url(../images/darkswirl.png);
-	font-color: #22333B/*background: ##eaeded*/;
+	background-image: url(../images/swirl.jpg);
+	color: white;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 h1, h2, h3, h4, p {
@@ -12,142 +13,255 @@ h1, h2, h3, h4, p {
 	margin-bottom: 1em;
 }
 
-h1{
-	color:  #EFFBF5;
-	font-family: 'Montserrat', sans-serif;
+h1, h2 {
 	font-weight: 700;
-	font-size: 3em;
-	padding: 1em;
-	
-
-}
-
-#wrapperhome {
-	margin: 4em auto;
-	/*max-width: 1200px;*/
 }
 
 #wrapper {
-	background-color: #EFFBF5;
-	margin: 4em auto;
+	margin: 2em auto;
 	max-width: 1200px;
-	align-items: center;
-	justify-content: center;
 }
 
 #main {
-}
-
-.home {
-	position: relative;
-	margin-bottom: 2em;
-}
-
-.home .grid {
-	grid-gap: 0;
-}
-
-.home > div::before {
-  position: relative;
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 0;
-  padding-bottom: calc(100% / (1/1));
-}
-
-.home .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	display: grid;
-	align-items: center;
-	justify-content: center;
-}
-.home .content-inside {
-	padding: 0rem;
+	margin: 2em;
+	padding: 2em;
 }
 
 #sidebar {
-
+	background:rgba(0,0,0,0.4);
+	padding: 1em;
 }
 
-.item img {
-	margin-bottom: 2em;
-}
-
-#content {
-}
-
-#masthead {
-
-}
-
-#nav ul {
- 	list-style: none;
- 	padding-left: 0;
- 	margin:0;
+#logo {
+	padding: 3em 0;
 }
 
 #logo h1 {
 	margin: 0;
 }
 
-a {
-  display: block;
-  padding: 20px;
-  background-color: #C6CBC2;
+#logo img, .item img {
+	width: 100%;
+	height: auto;
 }
 
-li {
-  float: right;
+.item span {
+	background: blue;
+	margin: 10px;
+	display: block;
+	width: 50%;
+	float: right;
+	font-weight: 800;
 }
 
- 
-
-a:link {
-  color: #22333B;
+.item img {
+	margin-bottom: 2em;
+}
+.item img {
+	margin: 0;
 }
 
-/* visited link */
-a:visited {
-  color: #035C6E;
+.playground-box {
+	overflow: hidden;
+	margin-bottom: 2em;
 }
 
-/* mouse over link */
-a:hover {
-  color: #9BBEBE;
+/* block */
+.item .left {
+	float: left;
+	width: 50%;
+	background: green;
+}
+
+.item .right {
+	float: right;
+	width: 50%;
+	background: red;
+}
+
+/* grid */
+
+.item .playground-box.grid {
+	grid-gap: 0;
+}
+
+.item .grid-left {
+	background: green;
+}
+
+.item .grid-right {
+	background: red;
+}
+
+/* flex */
+
+.item .flex-version {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item .flex-left {
+	background: green;
+}
+
+.item .flex-right {
+	background: red;
+}
+
+.big-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	background: purple;
+}
+
+.little-box {
+	background: black;
+	width: 100px;
+	height: 100px;
 }
 
 
 
-#nav li {
-	display: inline;
+#content {
+	/*background: red;*/
+}
+
+/* alt nav using flex */
+
+#topnav {
+
+}
+
+#topnav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+#topnav ul {
+	display: flex;
+}
+
+#topnav li {
+	margin-right: 2em;
 	margin-bottom: 0;
 }
 
+#topnav li:first-child {
+	margin-right: auto;
+}
+
+#topnav li:last-child {
+	margin-right: 0;
+}
+
+#topnav li a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/*nav */
+
+#nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+#nav li {
+	margin-bottom: 1em;
+}
+
+#nav li a {
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+#nav li a:hover {
+	color: brown;
+	text-decoration: none;
+	background: white;
+}
 
 .quote-holder {
-	height: 40vh;
+	height: auto;
+	background:rgba(0,20,30,0.7);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 3em;
+	padding: 2em;
+	margin-bottom: 2em;
 }
 
 .quote {
-	font-size: 2em;
+	
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
+#exquisite {
+	position: relative;
+	margin-bottom: 2em;
 }
+
+#exquisite .grid {
+	grid-gap: 0;
+}
+
+#exquisite .grid img {
+	margin-bottom: 0;
+	display: block;
+}
+
+#projects {
+	margin-bottom: 2em;
+}
+
+#projects .grid-item {
+	color: white;
+	position: relative;
+}
+
+#projects .grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#projects .grid-item .overlay {
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,20,30,0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#projects .grid-item:hover .overlay {
+	opacity: 1;
+}
+
+#projects .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+}
+
+/* Page specific styles */
+
+body.p1 {
+	background-image: url("../images/clouds.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* ------------ */
 
 @media (max-width: 699px) {
 
@@ -161,6 +275,7 @@ a:hover {
 	}
 
 	#logo {
+		text-align: center;
 		padding: 2em 0;
 	}
 
@@ -172,6 +287,7 @@ a:hover {
 	#nav li {
 		display: inline;
 		padding: .25em;
+		background: purple;
 		margin-bottom: 0;
 	}
 
